@@ -9,9 +9,17 @@
 3. Controller: 負責接收來自 View 的輸入，處理它們（通常是通過與 Model 交互），然後更新 View。在 PyQt 應用中，這通常是通過 slots 和 signals 來實現的。
 
 ## Install PyQt6 Library
+https://pypi.org/project/PyQt6/
 
 ```bash
 pip install PyQt6
+```
+
+## Install qt_material Library
+https://pypi.org/project/qt-material/
+
+```bash
+pip install qt-material
 ```
 
 ## Run Code
