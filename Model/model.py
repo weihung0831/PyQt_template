@@ -3,6 +3,7 @@ class Model:
         self.text = ""
 
     def getText(self):
+        self.text = "Hello World!"
         return self.text
 
     def setText(self, text):

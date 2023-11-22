@@ -1,0 +1,7 @@
+QLineEdit {{
+    color: #ffffffff;
+}}
+
+QWidget {{
+    font-size: 11pt;
+}}

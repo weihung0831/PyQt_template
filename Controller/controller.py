@@ -5,4 +5,5 @@ class Controller:
 
     def buttonClicked(self):
         text = self.view.getText()
-        self.view.setText(text)
+        self.model.setText(text)
+        self.view.setText(self.model.getText())
