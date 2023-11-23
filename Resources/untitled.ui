@@ -45,7 +45,7 @@
      </size>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -340,7 +340,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>590</y>
+        <y>570</y>
         <width>971</width>
         <height>51</height>
        </rect>
@@ -596,6 +596,46 @@
          </property>
         </spacer>
        </item>
+       <item>
+        <widget class="QLabel" name="label_16">
+         <property name="text">
+          <string>刀具壽命</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_25">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="knives_life">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_26">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="horizontalLayoutWidget_3">
@@ -654,7 +694,7 @@
         <x>10</x>
         <y>510</y>
         <width>971</width>
-        <height>71</height>
+        <height>51</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -677,9 +717,9 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>650</y>
+        <y>630</y>
         <width>971</width>
-        <height>21</height>
+        <height>41</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_6">
@@ -740,22 +780,6 @@
         </widget>
        </item>
       </layout>
-     </widget>
-     <widget class="QPushButton" name="startBtn_2">
-      <property name="enabled">
-       <bool>false</bool>
-      </property>
-      <property name="geometry">
-       <rect>
-        <x>420</x>
-        <y>560</y>
-        <width>75</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>開始</string>
-      </property>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_2">

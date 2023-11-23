@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'resources/untitled.ui'
+# Form implementation generated from reading ui file 'Resources/untitled.ui'
 #
 # Created by: PyQt6 UI code generator 6.5.2
 #
@@ -7,14 +7,9 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
-from PyQt6.QtGui import QDoubleValidator
 
 
 class Ui_MainWindow(object):
-    def __init__(self, controller):
-        super().__init__()
-        self.controller = controller
-
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1004, 768)
@@ -40,24 +35,12 @@ class Ui_MainWindow(object):
         self.sensor_A_end_angle.setReadOnly(True)
         self.sensor_A_end_angle.setObjectName("sensor_A_end_angle")
         self.gridLayout.addWidget(self.sensor_A_end_angle, 4, 4, 1, 1)
-        spacerItem = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout.addItem(spacerItem, 0, 0, 1, 1)
         self.label_9 = QtWidgets.QLabel(parent=self.gridLayoutWidget)
         self.label_9.setObjectName("label_9")
-        self.gridLayout.addWidget(
-            self.label_9, 8, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
-        spacerItem1 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        self.gridLayout.addWidget(self.label_9, 8, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
+        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout.addItem(spacerItem1, 0, 11, 1, 1)
         self.sensor_B_right_angle = QtWidgets.QLineEdit(parent=self.gridLayoutWidget)
         self.sensor_B_right_angle.setReadOnly(True)
@@ -67,18 +50,11 @@ class Ui_MainWindow(object):
         self.sensor_A_face_width.setReadOnly(True)
         self.sensor_A_face_width.setObjectName("sensor_A_face_width")
         self.gridLayout.addWidget(self.sensor_A_face_width, 4, 8, 1, 1)
-        spacerItem2 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout.addItem(spacerItem2, 0, 7, 1, 1)
         self.label_8 = QtWidgets.QLabel(parent=self.gridLayoutWidget)
         self.label_8.setObjectName("label_8")
-        self.gridLayout.addWidget(
-            self.label_8, 1, 10, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
+        self.gridLayout.addWidget(self.label_8, 1, 10, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
         self.right_angle_target = QtWidgets.QLineEdit(parent=self.gridLayoutWidget)
         self.right_angle_target.setReadOnly(True)
         self.right_angle_target.setObjectName("right_angle_target")
@@ -89,9 +65,7 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.sensor_A_right_angle, 4, 6, 1, 1)
         self.label_6 = QtWidgets.QLabel(parent=self.gridLayoutWidget)
         self.label_6.setObjectName("label_6")
-        self.gridLayout.addWidget(
-            self.label_6, 1, 6, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
+        self.gridLayout.addWidget(self.label_6, 1, 6, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
         self.face_width_target = QtWidgets.QLineEdit(parent=self.gridLayoutWidget)
         self.face_width_target.setReadOnly(True)
         self.face_width_target.setObjectName("face_width_target")
@@ -100,18 +74,11 @@ class Ui_MainWindow(object):
         self.sensor_B_end_angle.setReadOnly(True)
         self.sensor_B_end_angle.setObjectName("sensor_B_end_angle")
         self.gridLayout.addWidget(self.sensor_B_end_angle, 6, 4, 1, 1)
-        spacerItem3 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout.addItem(spacerItem3, 0, 9, 1, 1)
         self.label_5 = QtWidgets.QLabel(parent=self.gridLayoutWidget)
         self.label_5.setObjectName("label_5")
-        self.gridLayout.addWidget(
-            self.label_5, 1, 4, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
+        self.gridLayout.addWidget(self.label_5, 1, 4, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
         self.final_detection_result = QtWidgets.QLineEdit(parent=self.gridLayoutWidget)
         self.final_detection_result.setReadOnly(True)
         self.final_detection_result.setObjectName("final_detection_result")
@@ -122,81 +89,39 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.sensor_B_face_width, 6, 8, 1, 1)
         self.label_3 = QtWidgets.QLabel(parent=self.gridLayoutWidget)
         self.label_3.setObjectName("label_3")
-        self.gridLayout.addWidget(
-            self.label_3, 6, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
-        self.sensor_A_detection_value = QtWidgets.QLineEdit(
-            parent=self.gridLayoutWidget
-        )
+        self.gridLayout.addWidget(self.label_3, 6, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
+        self.sensor_A_detection_value = QtWidgets.QLineEdit(parent=self.gridLayoutWidget)
         self.sensor_A_detection_value.setReadOnly(True)
         self.sensor_A_detection_value.setObjectName("sensor_A_detection_value")
         self.gridLayout.addWidget(self.sensor_A_detection_value, 4, 10, 1, 1)
         self.label = QtWidgets.QLabel(parent=self.gridLayoutWidget)
         self.label.setObjectName("label")
-        self.gridLayout.addWidget(
-            self.label, 4, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
+        self.gridLayout.addWidget(self.label, 4, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
         self.end_angle_target = QtWidgets.QLineEdit(parent=self.gridLayoutWidget)
         self.end_angle_target.setReadOnly(True)
         self.end_angle_target.setObjectName("end_angle_target")
         self.gridLayout.addWidget(self.end_angle_target, 8, 4, 1, 1)
-        spacerItem4 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout.addItem(spacerItem4, 0, 3, 1, 1)
-        self.sensor_B_detection_value = QtWidgets.QLineEdit(
-            parent=self.gridLayoutWidget
-        )
+        self.sensor_B_detection_value = QtWidgets.QLineEdit(parent=self.gridLayoutWidget)
         self.sensor_B_detection_value.setReadOnly(True)
         self.sensor_B_detection_value.setObjectName("sensor_B_detection_value")
         self.gridLayout.addWidget(self.sensor_B_detection_value, 6, 10, 1, 1)
-        spacerItem5 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem5 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout.addItem(spacerItem5, 0, 5, 1, 1)
         self.label_7 = QtWidgets.QLabel(parent=self.gridLayoutWidget)
         self.label_7.setObjectName("label_7")
-        self.gridLayout.addWidget(
-            self.label_7, 1, 8, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
+        self.gridLayout.addWidget(self.label_7, 1, 8, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
         self.label_11 = QtWidgets.QLabel(parent=self.gridLayoutWidget)
         self.label_11.setObjectName("label_11")
-        self.gridLayout.addWidget(
-            self.label_11, 10, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
-        spacerItem6 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        self.gridLayout.addWidget(self.label_11, 10, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
+        spacerItem6 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.gridLayout.addItem(spacerItem6, 2, 0, 1, 1)
-        spacerItem7 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        spacerItem7 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.gridLayout.addItem(spacerItem7, 5, 0, 1, 1)
-        spacerItem8 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        spacerItem8 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.gridLayout.addItem(spacerItem8, 7, 0, 1, 1)
-        spacerItem9 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        spacerItem9 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.gridLayout.addItem(spacerItem9, 9, 0, 1, 1)
         self.horizontalLayoutWidget = QtWidgets.QWidget(parent=self.tab)
         self.horizontalLayoutWidget.setGeometry(QtCore.QRect(10, 570, 971, 51))
@@ -204,58 +129,31 @@ class Ui_MainWindow(object):
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout.setObjectName("horizontalLayout")
-        spacerItem10 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem10 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout.addItem(spacerItem10)
         self.startBtn = QtWidgets.QPushButton(parent=self.horizontalLayoutWidget)
         self.startBtn.setEnabled(False)
         self.startBtn.setObjectName("startBtn")
         self.horizontalLayout.addWidget(self.startBtn)
-        spacerItem11 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem11 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout.addItem(spacerItem11)
-        self.auto_control_btn = QtWidgets.QPushButton(
-            parent=self.horizontalLayoutWidget
-        )
+        self.auto_control_btn = QtWidgets.QPushButton(parent=self.horizontalLayoutWidget)
         self.auto_control_btn.setEnabled(False)
         self.auto_control_btn.setObjectName("auto_control_btn")
         self.horizontalLayout.addWidget(self.auto_control_btn)
-        spacerItem12 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem12 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout.addItem(spacerItem12)
         self.pauseBtn = QtWidgets.QPushButton(parent=self.horizontalLayoutWidget)
         self.pauseBtn.setEnabled(False)
         self.pauseBtn.setObjectName("pauseBtn")
         self.horizontalLayout.addWidget(self.pauseBtn)
-        spacerItem13 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem13 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout.addItem(spacerItem13)
         self.stopBtn = QtWidgets.QPushButton(parent=self.horizontalLayoutWidget)
         self.stopBtn.setEnabled(False)
         self.stopBtn.setObjectName("stopBtn")
         self.horizontalLayout.addWidget(self.stopBtn)
-        spacerItem14 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem14 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout.addItem(spacerItem14)
         self.horizontalLayoutWidget_2 = QtWidgets.QWidget(parent=self.tab)
         self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(10, 420, 971, 80))
@@ -263,102 +161,51 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_2)
         self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        spacerItem15 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem15 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem15)
         self.label_12 = QtWidgets.QLabel(parent=self.horizontalLayoutWidget_2)
         self.label_12.setObjectName("label_12")
-        self.horizontalLayout_2.addWidget(
-            self.label_12, 0, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
-        spacerItem16 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        self.horizontalLayout_2.addWidget(self.label_12, 0, QtCore.Qt.AlignmentFlag.AlignHCenter)
+        spacerItem16 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem16)
         self.counter = QtWidgets.QLineEdit(parent=self.horizontalLayoutWidget_2)
         self.counter.setReadOnly(True)
         self.counter.setObjectName("counter")
         self.horizontalLayout_2.addWidget(self.counter)
-        spacerItem17 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem17 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem17)
         self.label_13 = QtWidgets.QLabel(parent=self.horizontalLayoutWidget_2)
         self.label_13.setObjectName("label_13")
-        self.horizontalLayout_2.addWidget(
-            self.label_13, 0, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
-        spacerItem18 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        self.horizontalLayout_2.addWidget(self.label_13, 0, QtCore.Qt.AlignmentFlag.AlignHCenter)
+        spacerItem18 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem18)
         self.total_counter = QtWidgets.QLineEdit(parent=self.horizontalLayoutWidget_2)
         self.total_counter.setReadOnly(True)
         self.total_counter.setObjectName("total_counter")
         self.horizontalLayout_2.addWidget(self.total_counter)
-        spacerItem19 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem19 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem19)
         self.label_14 = QtWidgets.QLabel(parent=self.horizontalLayoutWidget_2)
         self.label_14.setObjectName("label_14")
-        self.horizontalLayout_2.addWidget(
-            self.label_14, 0, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
-        spacerItem20 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        self.horizontalLayout_2.addWidget(self.label_14, 0, QtCore.Qt.AlignmentFlag.AlignHCenter)
+        spacerItem20 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem20)
         self.ng_counter = QtWidgets.QLineEdit(parent=self.horizontalLayoutWidget_2)
         self.ng_counter.setReadOnly(True)
         self.ng_counter.setObjectName("ng_counter")
         self.horizontalLayout_2.addWidget(self.ng_counter)
-        spacerItem21 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem21 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem21)
         self.label_16 = QtWidgets.QLabel(parent=self.horizontalLayoutWidget_2)
         self.label_16.setObjectName("label_16")
         self.horizontalLayout_2.addWidget(self.label_16)
-        spacerItem22 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem22 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem22)
         self.knives_life = QtWidgets.QLineEdit(parent=self.horizontalLayoutWidget_2)
         self.knives_life.setReadOnly(True)
         self.knives_life.setObjectName("knives_life")
         self.horizontalLayout_2.addWidget(self.knives_life)
-        spacerItem23 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem23 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem23)
         self.horizontalLayoutWidget_3 = QtWidgets.QWidget(parent=self.tab)
         self.horizontalLayoutWidget_3.setGeometry(QtCore.QRect(10, 10, 971, 41))
@@ -366,12 +213,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_3)
         self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        spacerItem24 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        spacerItem24 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.horizontalLayout_3.addItem(spacerItem24)
         self.horizontalLayoutWidget_4 = QtWidgets.QWidget(parent=self.tab)
         self.horizontalLayoutWidget_4.setGeometry(QtCore.QRect(10, 340, 971, 71))
@@ -379,12 +221,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_4)
         self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
-        spacerItem25 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        spacerItem25 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.horizontalLayout_4.addItem(spacerItem25)
         self.horizontalLayoutWidget_5 = QtWidgets.QWidget(parent=self.tab)
         self.horizontalLayoutWidget_5.setGeometry(QtCore.QRect(10, 510, 971, 51))
@@ -392,12 +229,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_5)
         self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
-        spacerItem26 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        spacerItem26 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.horizontalLayout_5.addItem(spacerItem26)
         self.horizontalLayoutWidget_6 = QtWidgets.QWidget(parent=self.tab)
         self.horizontalLayoutWidget_6.setGeometry(QtCore.QRect(10, 630, 971, 41))
@@ -405,12 +237,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_6 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_6)
         self.horizontalLayout_6.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_6.setObjectName("horizontalLayout_6")
-        spacerItem27 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        spacerItem27 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.horizontalLayout_6.addItem(spacerItem27)
         self.horizontalLayoutWidget_15 = QtWidgets.QWidget(parent=self.tab)
         self.horizontalLayoutWidget_15.setGeometry(QtCore.QRect(10, 680, 481, 31))
@@ -422,9 +249,7 @@ class Ui_MainWindow(object):
         self.label_10.setEnabled(True)
         self.label_10.setObjectName("label_10")
         self.horizontalLayout_11.addWidget(self.label_10)
-        self.keyence_connect_status = QtWidgets.QLabel(
-            parent=self.horizontalLayoutWidget_15
-        )
+        self.keyence_connect_status = QtWidgets.QLabel(parent=self.horizontalLayoutWidget_15)
         self.keyence_connect_status.setText("")
         self.keyence_connect_status.setObjectName("keyence_connect_status")
         self.horizontalLayout_11.addWidget(self.keyence_connect_status)
@@ -444,12 +269,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_7)
         self.horizontalLayout_7.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
-        spacerItem28 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        spacerItem28 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.horizontalLayout_7.addItem(spacerItem28)
         self.gridLayoutWidget_2 = QtWidgets.QWidget(parent=self.tab_2)
         self.gridLayoutWidget_2.setGeometry(QtCore.QRect(10, 60, 971, 196))
@@ -457,130 +277,63 @@ class Ui_MainWindow(object):
         self.gridLayout_2 = QtWidgets.QGridLayout(self.gridLayoutWidget_2)
         self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_2.setObjectName("gridLayout_2")
-        self.check_fixed_position_CYL_down_btn = QtWidgets.QPushButton(
-            parent=self.gridLayoutWidget_2
-        )
+        self.check_fixed_position_CYL_down_btn = QtWidgets.QPushButton(parent=self.gridLayoutWidget_2)
         self.check_fixed_position_CYL_down_btn.setEnabled(False)
-        self.check_fixed_position_CYL_down_btn.setObjectName(
-            "check_fixed_position_CYL_down_btn"
-        )
+        self.check_fixed_position_CYL_down_btn.setObjectName("check_fixed_position_CYL_down_btn")
         self.gridLayout_2.addWidget(self.check_fixed_position_CYL_down_btn, 6, 10, 1, 1)
-        self.check_fixed_position_CYL_up_btn = QtWidgets.QPushButton(
-            parent=self.gridLayoutWidget_2
-        )
+        self.check_fixed_position_CYL_up_btn = QtWidgets.QPushButton(parent=self.gridLayoutWidget_2)
         self.check_fixed_position_CYL_up_btn.setEnabled(False)
-        self.check_fixed_position_CYL_up_btn.setObjectName(
-            "check_fixed_position_CYL_up_btn"
-        )
+        self.check_fixed_position_CYL_up_btn.setObjectName("check_fixed_position_CYL_up_btn")
         self.gridLayout_2.addWidget(self.check_fixed_position_CYL_up_btn, 6, 8, 1, 1)
-        self.clean_fixed_position_CYL_down_btn = QtWidgets.QPushButton(
-            parent=self.gridLayoutWidget_2
-        )
+        self.clean_fixed_position_CYL_down_btn = QtWidgets.QPushButton(parent=self.gridLayoutWidget_2)
         self.clean_fixed_position_CYL_down_btn.setEnabled(False)
-        self.clean_fixed_position_CYL_down_btn.setObjectName(
-            "clean_fixed_position_CYL_down_btn"
-        )
+        self.clean_fixed_position_CYL_down_btn.setObjectName("clean_fixed_position_CYL_down_btn")
         self.gridLayout_2.addWidget(self.clean_fixed_position_CYL_down_btn, 6, 6, 1, 1)
-        self.clean_stopper_cyl_up_btn = QtWidgets.QPushButton(
-            parent=self.gridLayoutWidget_2
-        )
+        self.clean_stopper_cyl_up_btn = QtWidgets.QPushButton(parent=self.gridLayoutWidget_2)
         self.clean_stopper_cyl_up_btn.setEnabled(False)
         self.clean_stopper_cyl_up_btn.setObjectName("clean_stopper_cyl_up_btn")
         self.gridLayout_2.addWidget(self.clean_stopper_cyl_up_btn, 4, 4, 1, 1)
-        spacerItem29 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem29 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_2.addItem(spacerItem29, 0, 11, 1, 1)
         self.label_2 = QtWidgets.QLabel(parent=self.gridLayoutWidget_2)
         self.label_2.setObjectName("label_2")
-        self.gridLayout_2.addWidget(
-            self.label_2, 4, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
+        self.gridLayout_2.addWidget(self.label_2, 4, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
         self.label_4 = QtWidgets.QLabel(parent=self.gridLayoutWidget_2)
         self.label_4.setObjectName("label_4")
-        self.gridLayout_2.addWidget(
-            self.label_4, 6, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
-        spacerItem30 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        self.gridLayout_2.addWidget(self.label_4, 6, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
+        spacerItem30 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_2.addItem(spacerItem30, 0, 9, 1, 1)
-        spacerItem31 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem31 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_2.addItem(spacerItem31, 0, 3, 1, 1)
-        spacerItem32 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem32 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_2.addItem(spacerItem32, 0, 5, 1, 1)
-        spacerItem33 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        spacerItem33 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.gridLayout_2.addItem(spacerItem33, 5, 0, 1, 1)
-        spacerItem34 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem34 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_2.addItem(spacerItem34, 0, 7, 1, 1)
-        self.clean_stopper_cyl_down_btn = QtWidgets.QPushButton(
-            parent=self.gridLayoutWidget_2
-        )
+        self.clean_stopper_cyl_down_btn = QtWidgets.QPushButton(parent=self.gridLayoutWidget_2)
         self.clean_stopper_cyl_down_btn.setEnabled(False)
         self.clean_stopper_cyl_down_btn.setObjectName("clean_stopper_cyl_down_btn")
         self.gridLayout_2.addWidget(self.clean_stopper_cyl_down_btn, 4, 6, 1, 1)
         self.label_17 = QtWidgets.QLabel(parent=self.gridLayoutWidget_2)
         self.label_17.setObjectName("label_17")
-        self.gridLayout_2.addWidget(
-            self.label_17, 1, 5, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
+        self.gridLayout_2.addWidget(self.label_17, 1, 5, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
         self.label_20 = QtWidgets.QLabel(parent=self.gridLayoutWidget_2)
         self.label_20.setObjectName("label_20")
-        self.gridLayout_2.addWidget(
-            self.label_20, 1, 9, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
-        self.check_stopper_cyl_down_btn = QtWidgets.QPushButton(
-            parent=self.gridLayoutWidget_2
-        )
+        self.gridLayout_2.addWidget(self.label_20, 1, 9, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
+        self.check_stopper_cyl_down_btn = QtWidgets.QPushButton(parent=self.gridLayoutWidget_2)
         self.check_stopper_cyl_down_btn.setEnabled(False)
         self.check_stopper_cyl_down_btn.setObjectName("check_stopper_cyl_down_btn")
         self.gridLayout_2.addWidget(self.check_stopper_cyl_down_btn, 4, 10, 1, 1)
-        self.check_stopper_cyl_up_btn = QtWidgets.QPushButton(
-            parent=self.gridLayoutWidget_2
-        )
+        self.check_stopper_cyl_up_btn = QtWidgets.QPushButton(parent=self.gridLayoutWidget_2)
         self.check_stopper_cyl_up_btn.setEnabled(False)
         self.check_stopper_cyl_up_btn.setObjectName("check_stopper_cyl_up_btn")
         self.gridLayout_2.addWidget(self.check_stopper_cyl_up_btn, 4, 8, 1, 1)
-        self.clean_fixed_position_CYL_up_btn = QtWidgets.QPushButton(
-            parent=self.gridLayoutWidget_2
-        )
+        self.clean_fixed_position_CYL_up_btn = QtWidgets.QPushButton(parent=self.gridLayoutWidget_2)
         self.clean_fixed_position_CYL_up_btn.setEnabled(False)
-        self.clean_fixed_position_CYL_up_btn.setObjectName(
-            "clean_fixed_position_CYL_up_btn"
-        )
+        self.clean_fixed_position_CYL_up_btn.setObjectName("clean_fixed_position_CYL_up_btn")
         self.gridLayout_2.addWidget(self.clean_fixed_position_CYL_up_btn, 6, 4, 1, 1)
-        spacerItem35 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        spacerItem35 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.gridLayout_2.addItem(spacerItem35, 2, 0, 1, 1)
         self.horizontalLayoutWidget_8 = QtWidgets.QWidget(parent=self.tab_2)
         self.horizontalLayoutWidget_8.setGeometry(QtCore.QRect(10, 260, 971, 41))
@@ -588,12 +341,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_8 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_8)
         self.horizontalLayout_8.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_8.setObjectName("horizontalLayout_8")
-        spacerItem36 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        spacerItem36 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.horizontalLayout_8.addItem(spacerItem36)
         self.gridLayoutWidget_3 = QtWidgets.QWidget(parent=self.tab_2)
         self.gridLayoutWidget_3.setGeometry(QtCore.QRect(10, 310, 971, 52))
@@ -601,19 +349,9 @@ class Ui_MainWindow(object):
         self.gridLayout_4 = QtWidgets.QGridLayout(self.gridLayoutWidget_3)
         self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_4.setObjectName("gridLayout_4")
-        spacerItem37 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem37 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_4.addItem(spacerItem37, 0, 6, 1, 1)
-        spacerItem38 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem38 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_4.addItem(spacerItem38, 0, 2, 1, 1)
         self.label_23 = QtWidgets.QLabel(parent=self.gridLayoutWidget_3)
         self.label_23.setObjectName("label_23")
@@ -626,33 +364,13 @@ class Ui_MainWindow(object):
         self.blow_air_off_btn.setEnabled(False)
         self.blow_air_off_btn.setObjectName("blow_air_off_btn")
         self.gridLayout_4.addWidget(self.blow_air_off_btn, 2, 12, 1, 1)
-        spacerItem39 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem39 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_4.addItem(spacerItem39, 0, 11, 1, 1)
-        spacerItem40 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem40 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_4.addItem(spacerItem40, 0, 8, 1, 1)
-        spacerItem41 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem41 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_4.addItem(spacerItem41, 0, 13, 1, 1)
-        spacerItem42 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem42 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_4.addItem(spacerItem42, 0, 4, 1, 1)
         self.blow_air_on_btn = QtWidgets.QPushButton(parent=self.gridLayoutWidget_3)
         self.blow_air_on_btn.setEnabled(False)
@@ -665,12 +383,7 @@ class Ui_MainWindow(object):
         self.label_19 = QtWidgets.QLabel(parent=self.gridLayoutWidget_3)
         self.label_19.setObjectName("label_19")
         self.gridLayout_4.addWidget(self.label_19, 2, 1, 1, 1)
-        spacerItem43 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem43 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_4.addItem(spacerItem43, 0, 0, 1, 1)
         self.horizontalLayoutWidget_9 = QtWidgets.QWidget(parent=self.tab_2)
         self.horizontalLayoutWidget_9.setGeometry(QtCore.QRect(10, 370, 971, 351))
@@ -678,12 +391,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_9 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_9)
         self.horizontalLayout_9.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_9.setObjectName("horizontalLayout_9")
-        spacerItem44 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        spacerItem44 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.horizontalLayout_9.addItem(spacerItem44)
         self.tabWidget.addTab(self.tab_2, "")
         self.tab_3 = QtWidgets.QWidget()
@@ -694,12 +402,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_13 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_12)
         self.horizontalLayout_13.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_13.setObjectName("horizontalLayout_13")
-        spacerItem45 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        spacerItem45 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.horizontalLayout_13.addItem(spacerItem45)
         self.gridLayoutWidget_4 = QtWidgets.QWidget(parent=self.tab_3)
         self.gridLayoutWidget_4.setGeometry(QtCore.QRect(10, 60, 971, 48))
@@ -707,65 +410,32 @@ class Ui_MainWindow(object):
         self.gridLayout_5 = QtWidgets.QGridLayout(self.gridLayoutWidget_4)
         self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_5.setObjectName("gridLayout_5")
-        self.sensor_A_detection_value_5 = QtWidgets.QLineEdit(
-            parent=self.gridLayoutWidget_4
-        )
+        self.sensor_A_detection_value_5 = QtWidgets.QLineEdit(parent=self.gridLayoutWidget_4)
         self.sensor_A_detection_value_5.setReadOnly(True)
         self.sensor_A_detection_value_5.setObjectName("sensor_A_detection_value_5")
         self.gridLayout_5.addWidget(self.sensor_A_detection_value_5, 3, 16, 1, 1)
-        spacerItem46 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem46 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_5.addItem(spacerItem46, 1, 0, 1, 1)
         self.label_33 = QtWidgets.QLabel(parent=self.gridLayoutWidget_4)
         self.label_33.setObjectName("label_33")
         self.gridLayout_5.addWidget(self.label_33, 3, 10, 1, 1)
-        spacerItem47 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem47 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_5.addItem(spacerItem47, 1, 7, 1, 1)
-        spacerItem48 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem48 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_5.addItem(spacerItem48, 1, 3, 1, 1)
         self.label_29 = QtWidgets.QLabel(parent=self.gridLayoutWidget_4)
         self.label_29.setObjectName("label_29")
-        self.gridLayout_5.addWidget(
-            self.label_29, 3, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
-        spacerItem49 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        self.gridLayout_5.addWidget(self.label_29, 3, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
+        spacerItem49 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_5.addItem(spacerItem49, 1, 5, 1, 1)
-        self.sensor_A_detection_value_3 = QtWidgets.QLineEdit(
-            parent=self.gridLayoutWidget_4
-        )
+        self.sensor_A_detection_value_3 = QtWidgets.QLineEdit(parent=self.gridLayoutWidget_4)
         self.sensor_A_detection_value_3.setReadOnly(True)
         self.sensor_A_detection_value_3.setObjectName("sensor_A_detection_value_3")
         self.gridLayout_5.addWidget(self.sensor_A_detection_value_3, 3, 12, 1, 1)
         self.label_32 = QtWidgets.QLabel(parent=self.gridLayoutWidget_4)
         self.label_32.setObjectName("label_32")
-        self.gridLayout_5.addWidget(
-            self.label_32, 3, 6, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
-        spacerItem50 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        self.gridLayout_5.addWidget(self.label_32, 3, 6, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
+        spacerItem50 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_5.addItem(spacerItem50, 1, 11, 1, 1)
         self.sensor_A_face_width_2 = QtWidgets.QLineEdit(parent=self.gridLayoutWidget_4)
         self.sensor_A_face_width_2.setReadOnly(True)
@@ -779,33 +449,13 @@ class Ui_MainWindow(object):
         self.sensor_A_end_angle_2.setReadOnly(True)
         self.sensor_A_end_angle_2.setObjectName("sensor_A_end_angle_2")
         self.gridLayout_5.addWidget(self.sensor_A_end_angle_2, 3, 4, 1, 1)
-        spacerItem51 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem51 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_5.addItem(spacerItem51, 1, 15, 1, 1)
-        spacerItem52 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem52 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_5.addItem(spacerItem52, 1, 13, 1, 1)
-        spacerItem53 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem53 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_5.addItem(spacerItem53, 1, 9, 1, 1)
-        spacerItem54 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem54 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_5.addItem(spacerItem54, 1, 17, 1, 1)
         self.horizontalLayoutWidget_13 = QtWidgets.QWidget(parent=self.tab_3)
         self.horizontalLayoutWidget_13.setGeometry(QtCore.QRect(10, 120, 971, 91))
@@ -813,12 +463,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_14 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_13)
         self.horizontalLayout_14.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_14.setObjectName("horizontalLayout_14")
-        spacerItem55 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        spacerItem55 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.horizontalLayout_14.addItem(spacerItem55)
         self.gridLayoutWidget_5 = QtWidgets.QWidget(parent=self.tab_3)
         self.gridLayoutWidget_5.setGeometry(QtCore.QRect(10, 220, 971, 238))
@@ -828,81 +473,39 @@ class Ui_MainWindow(object):
         self.gridLayout_6.setObjectName("gridLayout_6")
         self.label_31 = QtWidgets.QLabel(parent=self.gridLayoutWidget_5)
         self.label_31.setObjectName("label_31")
-        self.gridLayout_6.addWidget(
-            self.label_31, 1, 4, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
-        spacerItem56 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        self.gridLayout_6.addWidget(self.label_31, 1, 4, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
+        spacerItem56 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.gridLayout_6.addItem(spacerItem56, 2, 0, 1, 1)
         self.label_30 = QtWidgets.QLabel(parent=self.gridLayoutWidget_5)
         self.label_30.setObjectName("label_30")
-        self.gridLayout_6.addWidget(
-            self.label_30, 3, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
+        self.gridLayout_6.addWidget(self.label_30, 3, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
         self.label_36 = QtWidgets.QLabel(parent=self.gridLayoutWidget_5)
         self.label_36.setObjectName("label_36")
-        self.gridLayout_6.addWidget(
-            self.label_36, 7, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
-        spacerItem57 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        self.gridLayout_6.addWidget(self.label_36, 7, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
+        spacerItem57 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.gridLayout_6.addItem(spacerItem57, 4, 0, 1, 1)
         self.label_34 = QtWidgets.QLabel(parent=self.gridLayoutWidget_5)
         self.label_34.setObjectName("label_34")
-        self.gridLayout_6.addWidget(
-            self.label_34, 5, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
+        self.gridLayout_6.addWidget(self.label_34, 5, 2, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
         self.label_38 = QtWidgets.QLabel(parent=self.gridLayoutWidget_5)
         self.label_38.setObjectName("label_38")
-        self.gridLayout_6.addWidget(
-            self.label_38, 1, 6, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
-        spacerItem58 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        self.gridLayout_6.addWidget(self.label_38, 1, 6, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
+        spacerItem58 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_6.addItem(spacerItem58, 1, 3, 1, 1)
-        spacerItem59 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem59 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_6.addItem(spacerItem59, 1, 5, 1, 1)
         self.end_angle_max_value = QtWidgets.QLineEdit(parent=self.gridLayoutWidget_5)
         self.end_angle_max_value.setReadOnly(False)
         self.end_angle_max_value.setObjectName("end_angle_max_value")
         self.gridLayout_6.addWidget(self.end_angle_max_value, 3, 6, 1, 1)
-        self.end_angle_target_setting = QtWidgets.QLineEdit(
-            parent=self.gridLayoutWidget_5
-        )
+        self.end_angle_target_setting = QtWidgets.QLineEdit(parent=self.gridLayoutWidget_5)
         self.end_angle_target_setting.setEnabled(True)
         self.end_angle_target_setting.setReadOnly(False)
         self.end_angle_target_setting.setObjectName("end_angle_target_setting")
         self.gridLayout_6.addWidget(self.end_angle_target_setting, 3, 4, 1, 1)
-        spacerItem60 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem60 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_6.addItem(spacerItem60, 1, 7, 1, 1)
-        spacerItem61 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem61 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_6.addItem(spacerItem61, 1, 0, 1, 1)
         self.end_angle_min_value = QtWidgets.QLineEdit(parent=self.gridLayoutWidget_5)
         self.end_angle_min_value.setReadOnly(False)
@@ -910,26 +513,12 @@ class Ui_MainWindow(object):
         self.gridLayout_6.addWidget(self.end_angle_min_value, 3, 8, 1, 1)
         self.label_39 = QtWidgets.QLabel(parent=self.gridLayoutWidget_5)
         self.label_39.setObjectName("label_39")
-        self.gridLayout_6.addWidget(
-            self.label_39, 1, 8, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter
-        )
-        spacerItem62 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        self.gridLayout_6.addWidget(self.label_39, 1, 8, 1, 1, QtCore.Qt.AlignmentFlag.AlignHCenter)
+        spacerItem62 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.gridLayout_6.addItem(spacerItem62, 1, 10, 1, 1)
-        spacerItem63 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        spacerItem63 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.gridLayout_6.addItem(spacerItem63, 6, 0, 1, 1)
-        self.right_angle_target_setting = QtWidgets.QLineEdit(
-            parent=self.gridLayoutWidget_5
-        )
+        self.right_angle_target_setting = QtWidgets.QLineEdit(parent=self.gridLayoutWidget_5)
         self.right_angle_target_setting.setEnabled(True)
         self.right_angle_target_setting.setReadOnly(False)
         self.right_angle_target_setting.setObjectName("right_angle_target_setting")
@@ -944,9 +533,7 @@ class Ui_MainWindow(object):
         self.right_angle_min_value.setReadOnly(False)
         self.right_angle_min_value.setObjectName("right_angle_min_value")
         self.gridLayout_6.addWidget(self.right_angle_min_value, 5, 8, 1, 1)
-        self.face_width_target_setting = QtWidgets.QLineEdit(
-            parent=self.gridLayoutWidget_5
-        )
+        self.face_width_target_setting = QtWidgets.QLineEdit(parent=self.gridLayoutWidget_5)
         self.face_width_target_setting.setEnabled(True)
         self.face_width_target_setting.setReadOnly(False)
         self.face_width_target_setting.setObjectName("face_width_target_setting")
@@ -967,12 +554,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_15 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_14)
         self.horizontalLayout_15.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_15.setObjectName("horizontalLayout_15")
-        spacerItem64 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        spacerItem64 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.horizontalLayout_15.addItem(spacerItem64)
         self.horizontalLayoutWidget_16 = QtWidgets.QWidget(parent=self.tab_3)
         self.horizontalLayoutWidget_16.setGeometry(QtCore.QRect(10, 470, 971, 91))
@@ -980,12 +562,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_19 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_16)
         self.horizontalLayout_19.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_19.setObjectName("horizontalLayout_19")
-        spacerItem65 = QtWidgets.QSpacerItem(
-            20,
-            40,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-        )
+        spacerItem65 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.horizontalLayout_19.addItem(spacerItem65)
         self.horizontalLayoutWidget_17 = QtWidgets.QWidget(parent=self.tab_3)
         self.horizontalLayoutWidget_17.setGeometry(QtCore.QRect(10, 570, 971, 41))
@@ -993,22 +570,12 @@ class Ui_MainWindow(object):
         self.horizontalLayout_20 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_17)
         self.horizontalLayout_20.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_20.setObjectName("horizontalLayout_20")
-        spacerItem66 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem66 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout_20.addItem(spacerItem66)
         self.settingBtn = QtWidgets.QPushButton(parent=self.horizontalLayoutWidget_17)
         self.settingBtn.setObjectName("settingBtn")
         self.horizontalLayout_20.addWidget(self.settingBtn)
-        spacerItem67 = QtWidgets.QSpacerItem(
-            40,
-            20,
-            QtWidgets.QSizePolicy.Policy.Expanding,
-            QtWidgets.QSizePolicy.Policy.Minimum,
-        )
+        spacerItem67 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout_20.addItem(spacerItem67)
         self.tabWidget.addTab(self.tab_3, "")
         self.tab_4 = QtWidgets.QWidget()
@@ -1025,19 +592,13 @@ class Ui_MainWindow(object):
         self.tableWidget.setContextMenuPolicy(QtCore.Qt.ContextMenuPolicy.NoContextMenu)
         self.tableWidget.setAutoFillBackground(False)
         self.tableWidget.setLineWidth(1)
-        self.tableWidget.setHorizontalScrollBarPolicy(
-            QtCore.Qt.ScrollBarPolicy.ScrollBarAsNeeded
-        )
+        self.tableWidget.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarPolicy.ScrollBarAsNeeded)
         self.tableWidget.setAutoScroll(True)
-        self.tableWidget.setEditTriggers(
-            QtWidgets.QAbstractItemView.EditTrigger.NoEditTriggers
-        )
+        self.tableWidget.setEditTriggers(QtWidgets.QAbstractItemView.EditTrigger.NoEditTriggers)
         self.tableWidget.setDragEnabled(False)
         self.tableWidget.setAlternatingRowColors(False)
         self.tableWidget.setTextElideMode(QtCore.Qt.TextElideMode.ElideLeft)
-        self.tableWidget.setHorizontalScrollMode(
-            QtWidgets.QAbstractItemView.ScrollMode.ScrollPerItem
-        )
+        self.tableWidget.setHorizontalScrollMode(QtWidgets.QAbstractItemView.ScrollMode.ScrollPerItem)
         self.tableWidget.setShowGrid(True)
         self.tableWidget.setGridStyle(QtCore.Qt.PenStyle.NoPen)
         self.tableWidget.setWordWrap(True)
@@ -1046,39 +607,25 @@ class Ui_MainWindow(object):
         self.tableWidget.setColumnCount(7)
         self.tableWidget.setObjectName("tableWidget")
         item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(
-            QtCore.Qt.AlignmentFlag.AlignLeading | QtCore.Qt.AlignmentFlag.AlignVCenter
-        )
+        item.setTextAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignVCenter)
         self.tableWidget.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(
-            QtCore.Qt.AlignmentFlag.AlignLeading | QtCore.Qt.AlignmentFlag.AlignVCenter
-        )
+        item.setTextAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignVCenter)
         self.tableWidget.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(
-            QtCore.Qt.AlignmentFlag.AlignLeading | QtCore.Qt.AlignmentFlag.AlignVCenter
-        )
+        item.setTextAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignVCenter)
         self.tableWidget.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(
-            QtCore.Qt.AlignmentFlag.AlignLeading | QtCore.Qt.AlignmentFlag.AlignVCenter
-        )
+        item.setTextAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignVCenter)
         self.tableWidget.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(
-            QtCore.Qt.AlignmentFlag.AlignLeading | QtCore.Qt.AlignmentFlag.AlignVCenter
-        )
+        item.setTextAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignVCenter)
         self.tableWidget.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(
-            QtCore.Qt.AlignmentFlag.AlignLeading | QtCore.Qt.AlignmentFlag.AlignVCenter
-        )
+        item.setTextAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignVCenter)
         self.tableWidget.setHorizontalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(
-            QtCore.Qt.AlignmentFlag.AlignLeading | QtCore.Qt.AlignmentFlag.AlignVCenter
-        )
+        item.setTextAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignVCenter)
         self.tableWidget.setHorizontalHeaderItem(6, item)
         item = QtWidgets.QTableWidgetItem()
         brush = QtGui.QBrush(QtGui.QColor(255, 0, 0))
@@ -1154,9 +701,7 @@ class Ui_MainWindow(object):
         self.label_16.setText(_translate("MainWindow", "刀具壽命"))
         self.label_10.setText(_translate("MainWindow", "Keyence Sensor 連線狀態 : "))
         self.label_15.setText(_translate("MainWindow", "I/O 連線狀態 : "))
-        self.tabWidget.setTabText(
-            self.tabWidget.indexOf(self.tab), _translate("MainWindow", "首頁")
-        )
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "首頁"))
         self.check_fixed_position_CYL_down_btn.setText(_translate("MainWindow", "下降"))
         self.check_fixed_position_CYL_up_btn.setText(_translate("MainWindow", "上升"))
         self.clean_fixed_position_CYL_down_btn.setText(_translate("MainWindow", "下降"))
@@ -1175,9 +720,7 @@ class Ui_MainWindow(object):
         self.blow_air_on_btn.setText(_translate("MainWindow", "打開"))
         self.laser_on_btn.setText(_translate("MainWindow", "打開"))
         self.label_19.setText(_translate("MainWindow", "雷射機構"))
-        self.tabWidget.setTabText(
-            self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "手動控制")
-        )
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "手動控制"))
         self.label_33.setText(_translate("MainWindow", "鋼管長度"))
         self.label_29.setText(_translate("MainWindow", "生產編號"))
         self.label_32.setText(_translate("MainWindow", "鋼管直徑"))
@@ -1189,9 +732,7 @@ class Ui_MainWindow(object):
         self.label_38.setText(_translate("MainWindow", "最大容許值"))
         self.label_39.setText(_translate("MainWindow", "最小容許值"))
         self.settingBtn.setText(_translate("MainWindow", "送出"))
-        self.tabWidget.setTabText(
-            self.tabWidget.indexOf(self.tab_3), _translate("MainWindow", "設定")
-        )
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("MainWindow", "設定"))
         item = self.tableWidget.horizontalHeaderItem(0)
         item.setText(_translate("MainWindow", "端面角度A"))
         item = self.tableWidget.horizontalHeaderItem(1)
@@ -1209,195 +750,14 @@ class Ui_MainWindow(object):
         __sortingEnabled = self.tableWidget.isSortingEnabled()
         self.tableWidget.setSortingEnabled(False)
         self.tableWidget.setSortingEnabled(__sortingEnabled)
-        self.tabWidget.setTabText(
-            self.tabWidget.indexOf(self.tab_4), _translate("MainWindow", "異常紀錄")
-        )
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), _translate("MainWindow", "異常紀錄"))
 
-        self.connect()
 
-    def connect(self):
-        # -------------------- auto value --------------------
-        self.end_angle_target_setting.setText("59.2")
-        self.right_angle_target_setting.setText("89.86")
-        self.face_width_target_setting.setText("1.1")
-        self.end_angle_max_value.setText("0.16")
-        self.right_angle_max_value.setText("0.02")
-        self.face_width_max_value.setText("0.027")
-        self.end_angle_min_value.setText("0.17")
-        self.right_angle_min_value.setText("0.06")
-        self.face_width_min_value.setText("0.181")
-
-        # -------------------- 只能輸入數字 --------------------
-        float_validator = QDoubleValidator()
-        self.end_angle_target_setting.setValidator(float_validator)
-        self.right_angle_target_setting.setValidator(float_validator)
-        self.face_width_target_setting.setValidator(float_validator)
-        self.end_angle_max_value.setValidator(float_validator)
-        self.right_angle_max_value.setValidator(float_validator)
-        self.face_width_max_value.setValidator(float_validator)
-        self.end_angle_min_value.setValidator(float_validator)
-        self.right_angle_min_value.setValidator(float_validator)
-        self.face_width_min_value.setValidator(float_validator)
-
-        self.settingBtn.clicked.connect(self.controller.setting_btn_clicked)
-        self.startBtn.clicked.connect(self.controller.start_btn_clicked)
-        self.stopBtn.clicked.connect(self.controller.stop_btn_clicked)
-
-        self.set_target_value_color("yellow")
-
-    # -------------------- end angle target --------------------
-    def get_end_angle_target_setting_value(self):
-        return self.end_angle_target_setting.text()
-
-    def set_end_angle_target_value(self, value):
-        self.end_angle_target.setText(value)
-
-    # -------------------- right angle target --------------------
-    def get_right_angle_target_setting_value(self):
-        return self.right_angle_target_setting.text()
-
-    def set_right_angle_target_value(self, value):
-        self.right_angle_target.setText(value)
-
-    # -------------------- face width target --------------------
-    def get_face_width_target_setting_value(self):
-        return self.face_width_target_setting.text()
-
-    def set_face_width_target_value(self, value):
-        self.face_width_target.setText(value)
-
-    # -------------------- end angle max --------------------
-    def get_end_angle_max_value(self):
-        return self.end_angle_max_value.text()
-
-    # -------------------- right angle max --------------------
-    def get_right_angle_max_value(self):
-        return self.right_angle_max_value.text()
-
-    # -------------------- face width max --------------------
-    def get_face_width_max_value(self):
-        return self.face_width_max_value.text()
-
-    # -------------------- end angle min --------------------
-    def get_end_angle_min_value(self):
-        return self.end_angle_min_value.text()
-
-    # -------------------- right angle min --------------------
-    def get_right_angle_min_value(self):
-        return self.right_angle_min_value.text()
-
-    # -------------------- face width min --------------------
-    def get_face_width_min_value(self):
-        return self.face_width_min_value.text()
-
-    def check_setting_value(self):
-        end_angle_target_setting = self.get_end_angle_target_setting_value()
-        right_angle_target_setting = self.get_right_angle_target_setting_value()
-        face_width_target_setting = self.get_face_width_target_setting_value()
-        end_angle_max_value = self.get_end_angle_max_value()
-        right_angle_max_value = self.get_right_angle_max_value()
-        face_width_max_value = self.get_face_width_max_value()
-        end_angle_min_value = self.get_end_angle_min_value()
-        right_angle_min_value = self.get_right_angle_min_value()
-        face_width_min_value = self.get_face_width_min_value()
-
-        if (
-            end_angle_target_setting == ""
-            or right_angle_target_setting == ""
-            or face_width_target_setting == ""
-            or end_angle_max_value == ""
-            or right_angle_max_value == ""
-            or face_width_max_value == ""
-            or end_angle_min_value == ""
-            or right_angle_min_value == ""
-            or face_width_min_value == ""
-        ):
-            QtWidgets.QMessageBox.warning(QtWidgets.QMessageBox(), "Error", "請輸入數值")
-
-    def set_target_value_color(self, color):
-        self.end_angle_target.setStyleSheet(f"color: {color};")
-        self.right_angle_target.setStyleSheet(f"color: {color};")
-        self.face_width_target.setStyleSheet(f"color: {color};")
-
-    def close_setting_page_ui(self):
-        self.settingBtn.setEnabled(False)
-
-        self.end_angle_target_setting.setEnabled(False)
-        self.right_angle_target_setting.setEnabled(False)
-        self.face_width_target_setting.setEnabled(False)
-
-        self.end_angle_max_value.setEnabled(False)
-        self.right_angle_max_value.setEnabled(False)
-        self.face_width_max_value.setEnabled(False)
-
-        self.end_angle_min_value.setEnabled(False)
-        self.right_angle_min_value.setEnabled(False)
-        self.face_width_min_value.setEnabled(False)
-
-    def set_start_btn_status(self, status):
-        self.startBtn.setEnabled(status)
-
-    def set_stop_btn_status(self, status):
-        self.stopBtn.setEnabled(status)
-
-    def update_keyence_sensor_status(self, status, color):
-        self.keyence_connect_status.setText(status)
-        self.keyence_connect_status.setStyleSheet(f"color: {color};")
-
-    def set_sensor_A_end_angle_value(self, value):
-        self.sensor_A_end_angle.setText(str(value))
-
-    def set_sensor_A_right_angle_value(self, value):
-        self.sensor_A_right_angle.setText(str(value))
-
-    def set_sensor_A_face_width_value(self, value):
-        self.sensor_A_face_width.setText(str(value))
-
-    def set_sensor_B_end_angle_value(self, value):
-        self.sensor_B_end_angle.setText(str(value))
-
-    def set_sensor_B_right_angle_value(self, value):
-        self.sensor_B_right_angle.setText(str(value))
-
-    def set_sensor_B_face_width_value(self, value):
-        self.sensor_B_face_width.setText(str(value))
-
-    def get_sensor_A_judgment_status(self):
-        return self.sensor_A_detection_value.text()
-
-    def set_sensor_A_judgment_status(self, status, color):
-        self.sensor_A_detection_value.setText(status)
-        self.sensor_A_detection_value.setStyleSheet(f"color: {color};")
-
-    def get_sensor_B_judgment_status(self):
-        return self.sensor_B_detection_value.text()
-
-    def set_sensor_B_judgment_status(self, status, color):
-        self.sensor_B_detection_value.setText(status)
-        self.sensor_B_detection_value.setStyleSheet(f"color: {color};")
-
-    def get_final_judgment_status(self):
-        return self.final_detection_result.text()
-
-    def set_final_judgment_status(self, status, color):
-        self.final_detection_result.setText(status)
-        self.final_detection_result.setStyleSheet(f"color: {color};")
-
-    def show_error_data(self, result, time):
-        self.tableWidget.insertRow(0)
-        self.tableWidget.setItem(0, 0, QtWidgets.QTableWidgetItem(str(result[1])))
-        self.tableWidget.setItem(0, 1, QtWidgets.QTableWidgetItem(str(result[0])))
-        self.tableWidget.setItem(0, 2, QtWidgets.QTableWidgetItem(str(result[2])))
-        self.tableWidget.setItem(0, 3, QtWidgets.QTableWidgetItem(str(result[4])))
-        self.tableWidget.setItem(0, 4, QtWidgets.QTableWidgetItem(str(result[3])))
-        self.tableWidget.setItem(0, 5, QtWidgets.QTableWidgetItem(str(result[5])))
-        self.tableWidget.setItem(0, 6, QtWidgets.QTableWidgetItem(time))
-
-    def set_count(self, count):
-        self.counter.setText(str(count))
-
-    def set_total_count(self, count):
-        self.total_counter.setText(str(count))
-
-    def set_ng_count(self, count):
-        self.ng_counter.setText(str(count))
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec())
